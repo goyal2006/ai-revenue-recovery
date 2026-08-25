@@ -67,7 +67,15 @@ def build_recovery_dataset(df: pd.DataFrame):
     )
 
     # ---------------------------------------------------------
-    # 3. Select model features
+    # 3. Create behavioral features
+    # ---------------------------------------------------------
+
+    
+
+    
+
+    # ---------------------------------------------------------
+    # 4. Select model features
     # ---------------------------------------------------------
 
     feature_columns = NUMERIC_FEATURES + CATEGORICAL_FEATURES
@@ -75,7 +83,7 @@ def build_recovery_dataset(df: pd.DataFrame):
     X = data[feature_columns].copy()
 
     # ---------------------------------------------------------
-    # 4. Extract target
+    # 5. Extract target
     # ---------------------------------------------------------
 
     y = data[TARGET].copy()
